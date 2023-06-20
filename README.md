@@ -1,4 +1,7 @@
 # AutoLabel
- This project is developed using PyQt and is inspired by SAM, creating an automatic labeling system based on the concept of Labelimg.
+ This project is developed using PyQt and is inspired by [SAM](https://github.com/facebookresearch/segment-anything), creating an automatic labeling system based on the concept of Labelimg.
 
 ## Environment
+- PyQt5
+- lxml
+- [Environment of SAM](https://github.com/facebookresearch/segment-anything#installation)
