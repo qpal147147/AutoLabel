@@ -5,3 +5,5 @@
 - PyQt5
 - lxml
 - [Segment Anything](https://github.com/facebookresearch/segment-anything#installation)
+
+## Model
