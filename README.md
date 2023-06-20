@@ -4,4 +4,4 @@
 ## Environment
 - PyQt5
 - lxml
-- [Environment of SAM](https://github.com/facebookresearch/segment-anything#installation)
+- [Segment Anything](https://github.com/facebookresearch/segment-anything#installation)
