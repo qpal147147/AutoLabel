@@ -53,7 +53,7 @@ self.sam = SA(model_name="vit_b", model_path="sam_vit_b_01ec64.pth")
 ```
 
 ## Usage
-1. Your directory must include 'classes.txt' and you can edit the classes on your own.
+1. Your directory must include `classes.txt` and you can edit the classes on your own.
    ```txt
    dog
    person
