@@ -1,5 +1,8 @@
 # AutoLabel
- This project is developed using PyQt and is inspired by [SAM](https://github.com/facebookresearch/segment-anything), creating an automatic labeling system based on the concept of [Labelimg](https://github.com/heartexlabs/labelImg).
+ This project is developed using PyQt and is inspired by [SAM](https://github.com/facebookresearch/segment-anything), creating an automatic labeling system based on the concept of [LabelImg](https://github.com/heartexlabs/labelImg).
+
+## Features
+Similar functionalities to LabelImg (although basic).
 
 ## Environment
 - PyQt5
@@ -18,5 +21,10 @@ Then modify the `name` and `path` [here](https://github.com/qpal147147/AutoLabel
 self.sam = SA(model_name="vit_b", model_path="sam_vit_b_01ec64.pth")
 ```
 
-# Reference
-[segment-anything](https://github.com/facebookresearch/segment-anything)
+## Run
+```python
+python autoLabel.py
+```
+
+## Reference
+- [segment-anything](https://github.com/facebookresearch/segment-anything)
