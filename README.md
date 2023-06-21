@@ -5,20 +5,25 @@
 Similar functionalities to LabelImg (although very basic).
 
 ### Annotate the rect box
+<img src="https://github.com/qpal147147/AutoLabel/blob/main/samples/annotate.gif" alt="Annotate" width="600" height="402">
 
 ### Automated annotations with SAM
 1. Right mouse on the object you're interested in.
+  <img src="https://github.com/qpal147147/AutoLabel/blob/main/samples/sam_1.gif" alt="Automated annotations" width="600" height="402">  
+  <img src="https://github.com/qpal147147/AutoLabel/blob/main/samples/sam_2.gif" alt="Automated annotations" width="600" height="402">
+  
 2. Left mouse to exclude the objects you're not interested in.
+  <img src="https://github.com/qpal147147/AutoLabel/blob/main/samples/sam_3.gif" alt="Automated annotations" width="600" height="402">
    
 ### Saving
-You can choose from three formats: `YOLO`, `Pascal VOC` and `COCO`.  
-
+You can choose from three formats: `YOLO`, `Pascal VOC` and `COCO`, the default is YOLO.  
 ***Notice:***
 - If you choose the `COCO` format, it must be consistent from the beginning, otherwise, you will only obtain annotations for a single image.
 
 ### Visualization
 You can place the annotations in the same directory as the images, and the labels file name must be same with image file name.  
 If it is in `COCO` format, put `annotations.json` in the directory.
+<img src="https://github.com/qpal147147/AutoLabel/blob/main/samples/visualization.gif" alt="Visualization" width="600" height="402">
 
 ### Hotkeys
 | Hotkey | Description |
@@ -62,3 +67,4 @@ self.sam = SA(model_name="vit_b", model_path="sam_vit_b_01ec64.pth")
 
 ## Reference
 - [segment-anything](https://github.com/facebookresearch/segment-anything)
+- [labelImg](https://github.com/heartexlabs/labelImg)
