@@ -16,7 +16,7 @@ Similar functionalities to LabelImg (although very basic).
   <img src="https://github.com/qpal147147/AutoLabel/blob/main/samples/sam_3.gif" alt="Automated annotations" width="600" height="402">
    
 ### Saving
-You can choose from three formats: `YOLO`, `Pascal VOC` and `COCO`, the default is YOLO.  
+You can choose from three formats: `YOLO`, `Pascal VOC` and `COCO`, the default is `YOLO`.  
 ***Notice:***
 - If you choose the `COCO` format, it must be consistent from the beginning, otherwise, you will only obtain annotations for a single image.
 
