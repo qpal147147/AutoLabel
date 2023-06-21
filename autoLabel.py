@@ -20,7 +20,7 @@ class AutoLabel(QtWidgets.QMainWindow, ui.Ui_AutoLabel):
         super().__init__()
         self.setupUi(self)
 
-        load_classes_from_file("classes.txt")
+        load_classes_from_file(Path("classes.txt"))
         self.sam = SA(model_name="vit_b", model_path="sam_vit_b_01ec64.pth")
 
         self.pixmap = None

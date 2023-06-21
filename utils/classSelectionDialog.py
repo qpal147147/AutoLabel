@@ -1,4 +1,5 @@
 from typing import Dict
+from pathlib import Path
 
 from PyQt5.QtWidgets import QDialog, QVBoxLayout, QListWidget, QDialogButtonBox
 
@@ -21,8 +22,14 @@ class CategoryDialog(QDialog):
         layout.addWidget(self.buttonBox)
         self.setLayout(layout)
 
-def load_classes_from_file(fileName: str) -> None:
-    with open(fileName, "r")  as f:
+def load_classes_from_file(file_path: Path) -> None:
+    file_name = file_path.name
+
+    if not file_path.exists():
+        with open(file_name, "w") as f:
+            f.writelines(["dog\n", "person\n", "cat\n", "tv\n", "car"])
+            
+    with open(file_name, "r")  as f:
         lines = f.readlines()
         for line in lines:
             c = line.strip()
