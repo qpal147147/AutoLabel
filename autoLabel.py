@@ -32,7 +32,7 @@ class AutoLabel(QtWidgets.QMainWindow, ui.Ui_AutoLabel):
         self.openDirBtn.clicked.connect(self.open_dir)
         self.nextImageBtn.clicked.connect(self.next_img)
         self.prevImageBtn.clicked.connect(self.prev_img)
-        self.predBtn.clicked.connect(self.predict_event)
+        self.predBtn.clicked.connect(lambda: self.predict_event())
         self.changeFormatBtn.clicked.connect(lambda: self.change_save_format(next(btn_cycle_texts)))
         self.saveBtn.clicked.connect(lambda: self.save(self.get_save_format()))
         self.classList.itemClicked.connect(self.highlight_clicked_item)
