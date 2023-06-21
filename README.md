@@ -1,8 +1,34 @@
 # AutoLabel
- This project is developed using PyQt and is inspired by [SAM](https://github.com/facebookresearch/segment-anything), creating an automatic labeling system based on the concept of [LabelImg](https://github.com/heartexlabs/labelImg).
+ This project is developed using PyQt and is inspired by [SAM](https://github.com/facebookresearch/segment-anything), creating an automatic annotation system based on the concept of [LabelImg](https://github.com/heartexlabs/labelImg).
 
 ## Features
-Similar functionalities to LabelImg (although basic).
+Similar functionalities to LabelImg (although very basic).
+
+### Annotate the rect box
+
+### Automated annotations with SAM
+1. Right mouse on the object you're interested in.
+2. Left mouse to exclude the objects you're not interested in.
+   
+### Saving
+You can choose from three formats: `YOLO`, `Pascal VOC` and `COCO`.  
+
+***Notice:***
+- If you choose the `COCO` format, it must be consistent from the beginning, otherwise, you will only obtain annotations for a single image.
+
+### Visualization
+You can place the annotations in the same directory as the images, and the labels file name must be same with image file name.  
+If it is in `COCO` format, put `annotations.json` in the directory.
+
+### Hotkeys
+| Hotkey | Description |
+| :--: | :--: |
+| D | Next image |
+| A | Previous image |
+| Space | Automatically predict rectangle box |
+| del | Delete the selected rectangle box |
+| Ctrl + S | Save annotations |
+| ↑→↓←  | Move the selected rectangle box |
 
 ## Environment
 - PyQt5
@@ -21,10 +47,18 @@ Then modify the `name` and `path` [here](https://github.com/qpal147147/AutoLabel
 self.sam = SA(model_name="vit_b", model_path="sam_vit_b_01ec64.pth")
 ```
 
-## Run
-```python
-python autoLabel.py
-```
+## Usage
+1. Your directory must include 'classes.txt' and you can edit the classes on your own.
+   ```txt
+   dog
+   person
+   cat
+   ...
+   ```
+2. Run
+   ```python
+   python autoLabel.py
+   ```
 
 ## Reference
 - [segment-anything](https://github.com/facebookresearch/segment-anything)
